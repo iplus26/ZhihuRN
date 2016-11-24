@@ -6,7 +6,7 @@ import Spinner from 'react-native-spinkit'
 
 import { Tool, Config, } from '../utils'
 
-class Loading extends Component {
+class LoadingPage extends Component {
     render() {
         return (
             <View style={ { width: Tool.getDeviceWidth(), alignItems: 'center', } }>
@@ -16,4 +16,4 @@ class Loading extends Component {
     }
 }
 
-module.exports = Loading;
+module.exports = LoadingPage;

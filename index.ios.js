@@ -12,13 +12,13 @@ import {
   View
 } from 'react-native';
 
-import LoadingPage from './js/page/LoadingPage'
+import ListPage from './js/page/ListPage'
 
 export default class ZhihuRN extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <LoadingPage />
+        <ListPage />
       </View>
     );
   }
@@ -30,16 +30,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
