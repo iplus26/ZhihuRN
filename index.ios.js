@@ -9,7 +9,8 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  NavigatorIOS
 } from 'react-native';
 
 import ListPage from './js/page/ListPage'
@@ -17,20 +18,15 @@ import ListPage from './js/page/ListPage'
 export default class ZhihuRN extends Component {
   render() {
     return (
-      <View style={styles.container}>
-        <ListPage />
-      </View>
+      <NavigatorIOS
+        initialRoute={{
+          component: ListPage,
+          title: '知乎段子',
+        }}
+        style={{flex: 1}}
+      />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-});
 
 AppRegistry.registerComponent('ZhihuRN', () => ZhihuRN);
